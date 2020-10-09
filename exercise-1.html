@@ -15,10 +15,30 @@
             color: #41160B;
         }
 
+        input {
+            border-color: #F26522;
+            color: #F26522;
+            width: 60%;
+            display: block;
+            padding: 0.5em;
+            margin: 0.5em;
+        }
+
+        ::placeholder{
+            color: #F26522;
+        }
+
+        textarea{
+            border-color: #F26522;
+            color: #F26522;
+            padding: 0.5em;
+            margin: 0.5em;
+        }
+
         #left-section{
+            width: 50%;
             display: inline;
             float: left;
-            width: 50%;
         }
 
         #right-section{
@@ -29,6 +49,14 @@
 
         .orange{
             color: #f78b1e;
+        }
+
+        #submit-button{
+            color: white;
+            background-color: #F26522;
+            border-color: #F26522;
+            border-radius: 0.1em;
+            box-shadow: none;
         }
 
 
@@ -60,11 +88,13 @@
     <div id="right-section">
         <form>
 
-            <input type="text" placeholder="Name"/>
-            <input type="number" placeholder="Phone Number"/>
-            <input type="email" placeholder="Email"/>
-            <input type="text" placeholder="Write to us"/>
-            <input type="submit"/>
+            <input type="text" placeholder="👱 Name"/>
+            <input type="number" placeholder="📞 Phone Number"/>
+            <input type="email" placeholder="📧 Email"/>
+            <textarea rows = "10" cols = "52" name = "description">
+                Write to us
+             </textarea>
+            <input type="submit" id="submit-button"/>
 
         </form>
     </div>
