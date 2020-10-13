@@ -46,10 +46,10 @@ function celebrateBirthdayOfPerson(){
 //     this.age++;
 // }
 
-john.celebrateBirthday = jane.celebrateBirthday = celebrateBirthdayOfPerson();
+john.celebrateBirthday = jane.celebrateBirthday = celebrateBirthdayOfPerson;
 
-john.celebrateBirthday;
+john.celebrateBirthday();
 console.log(john.age);
 
-jane.celebrateBirthday;
+jane.celebrateBirthday();
 console.log(jane.age);
