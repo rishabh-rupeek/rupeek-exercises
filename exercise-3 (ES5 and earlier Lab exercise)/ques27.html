@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 27</title>
+</head>
+<body>
+    <p id="para-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Cum harum fugiat corporis quisquam reprehenderit ipsa vero alias reiciendis et, 
+        dolorem voluptates nisi officiis illum incidunt tempore, enim atque voluptas accusantium?
+    </p>
+    <p id="para-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Cum harum fugiat corporis quisquam reprehenderit ipsa vero alias reiciendis et, 
+        dolorem voluptates nisi officiis illum incidunt tempore, enim atque voluptas accusantium?
+    </p>
+    <p id="para-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Cum harum fugiat corporis quisquam reprehenderit ipsa vero alias reiciendis et, 
+        dolorem voluptates nisi officiis illum incidunt tempore, enim atque voluptas accusantium?
+    </p>
+
+    <style>
+        .para-style{
+            font-weight: bold;
+            background-color: orange;
+        }
+    </style>
+
+    <script>
+        let newNode=document.createElement("p");
+        newNode.innerHTML = "New Node";
+        document.querySelector("#para-1").appendChild(newNode);
+        console.log(document.querySelector("#para-2").textContent);
+        console.log(document.querySelectorAll("p")[1]);
+        document.querySelector("#para-3").setAttribute("name","para-3");
+        console.log(document.querySelector("#para-3").getAttribute("name"));
+
+        document.querySelector("#para-3").classList.add("para-style");
+
+    </script>
+
+</body>
+</html>
