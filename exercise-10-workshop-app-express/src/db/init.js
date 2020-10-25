@@ -11,7 +11,7 @@ mongoose.set( 'returnOriginal', false );
 
 mongoose.connect(uri,{useNewUrlParser:true});
 
-mongoose.connect.on('open', ()=>{
+mongoose.connection.on('open', ()=>{
     console.log('connected to db');
     
     //load data
